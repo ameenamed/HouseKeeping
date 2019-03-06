@@ -31,10 +31,16 @@ public class Main4Activity extends AppCompatActivity {
         desc=(EditText)findViewById(R.id.description);
         edit=id.getText().toString();
         edit1=desc.getText().toString();
-        mRef = new Firebase("https://housekeeping-aa448.firebaseio.com/");
-        Firebase mRefChild=mRef.child("Worker");
+        //mRef = new Firebase("https://housekeeping-aa448.firebaseio.com/");
+        cRef=new Firebase("https://housekeeping-aa448.firebaseio.com/workers");
+
+        /*Firebase mRefChild=mRef.child("Worker");
         Firebase cRefChild=mRefChild.child(edit);
-        cRefChild.child(edit).setValue(edit1);
+        cRefChild.child(edit).setValue(edit1);*/
+
+        Firebase d=cRef.child("Worker");
+        Firebase e=d.child(edit);
+        e.child(edit).setValue(edit1);
         Toast.makeText(getApplicationContext(), "Worker Added!", Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(this,MainActivity.class);
         startActivity(intent);

@@ -33,6 +33,7 @@ public class Main7Activity extends AppCompatActivity {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 String value=dataSnapshot.getValue(String.class);
+
                 lat.add(value);
                 String key=dataSnapshot.getKey();
                 mkeys.add(key);
