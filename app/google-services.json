@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "724679568977",
+    "firebase_url": "https://housekeeping-aa448.firebaseio.com",
+    "project_id": "housekeeping-aa448",
+    "storage_bucket": "housekeeping-aa448.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724679568977:android:323232f5a23b1369",
+        "android_client_info": {
+          "package_name": "com.example.android.housekeeping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724679568977-i0jvelul1ddf27kiui8tcdkesck6bv0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.housekeeping",
+            "certificate_hash": "374663a89a174e89f5fe51c17eb7b6e48ce4d044"
+          }
+        },
+        {
+          "client_id": "724679568977-ntta6uvqcg7om78mq680vpupevnu8vfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMDyOcpRKUWRzQzZDW36Wv_T-H0AobcOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724679568977-ntta6uvqcg7om78mq680vpupevnu8vfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main6Activity">
+
+    <EditText
+        android:hint="Asset Id "
+        android:id="@+id/asssetid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <EditText
+        android:hint="Task Id"
+        android:id="@+id/taskid"
+        android:layout_below="@id/asssetid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Worker Id"
+        android:id="@+id/workerid"
+        android:layout_below="@id/taskid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="Task to be performed by"
+        android:layout_below="@id/workerid"
+        android:id="@+id/tak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="Current Time"
+        android:layout_below="@id/tak"
+        android:id="@+id/curr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/cancel"
+        android:text="Cancel"
+        android:onClick="cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/ok"
+        android:text="OK"
+        android:onClick="ok"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

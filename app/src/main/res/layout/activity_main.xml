@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:text="Add Asset"
+        android:id="@+id/addasset"
+        android:onClick="addasset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Add Task"
+        android:onClick="addtask"
+        android:id="@+id/addtask"
+        android:layout_below="@id/addasset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Add Worker"
+        android:onClick="addworker"
+        android:id="@+id/addworker"
+        android:layout_below="@id/addtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="List of All Existing Assets"
+        android:layout_below="@id/addworker"
+        android:id="@+id/list"
+        android:onClick="list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:text="Allocate Task"
+        android:layout_below="@id/list"
+        android:id="@+id/allocate"
+        android:onClick="allocate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Get Task for Worker"
+        android:layout_below="@id/allocate"
+        android:id="@+id/taskalloc"
+        android:onClick="taskalloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
