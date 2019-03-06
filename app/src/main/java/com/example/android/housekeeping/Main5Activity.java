@@ -26,7 +26,7 @@ import java.util.Map;
 
 public class Main5Activity extends AppCompatActivity {
     ListView listView;
-   // FirebaseDatabase database=FirebaseDatabase.getInstance();
+   FirebaseDatabase database=FirebaseDatabase.getInstance();
     //atabaseReference databaseReference=database.getReference("Asset");
     ArrayList<String> list;
     ArrayAdapter<String> arrayAdapter;
