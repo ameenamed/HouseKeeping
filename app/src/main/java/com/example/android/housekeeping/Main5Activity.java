@@ -26,8 +26,7 @@ import java.util.Map;
 
 public class Main5Activity extends AppCompatActivity {
     ListView listView;
-   FirebaseDatabase database=FirebaseDatabase.getInstance();
-    //atabaseReference databaseReference=database.getReference("Asset");
+
     ArrayList<String> list;
     ArrayAdapter<String> arrayAdapter;
     Firebase mRef;
@@ -35,12 +34,15 @@ public class Main5Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
         //FirebaseApp.initializeApp(this);
         Firebase.setAndroidContext(this);
         listView=(ListView)findViewById(R.id.listView);
         mRef = new Firebase("https://vitbus1.firebaseio.com/asset");
+        FirebaseDatabase database=FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference=database.getReference("Asset");
 
         list=new ArrayList<>();
         arrayAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,list);

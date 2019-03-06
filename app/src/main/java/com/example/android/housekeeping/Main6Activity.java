@@ -39,7 +39,7 @@ public class Main6Activity extends AppCompatActivity {
         c=wid.getText().toString();
         d=curr.getText().toString();
         e=jk.getText().toString();
-        mRef = new Firebase("https://housekeeping-aa448.firebaseio.com/");
+        mRef = new Firebase("https://housekeeping-aa448.firebaseio.com/Allocated");
         Firebase mRefChild=mRef.child("Allocated");
         Firebase cRefChild=mRefChild.child(c);
         cRefChild.child(c).setValue(b);
